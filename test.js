@@ -1,7 +1,8 @@
-function fact(n){
-    if(n<=1) return 1;
-    return n*fact(n-1);
-}
-for(var i=1; i<10; i++){
-    console.log(i+"! = "+ fact(i));
-}
+var card ={"mine":"Spade A","yours":"Spade B"};
+card["third"] = "Spade 9";
+console.log(card);
+var a=1;
+console.log('${a}');
+//console.log("${card["mine"]}");
+delete card["third"];
+console.log(card);
