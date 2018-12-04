@@ -1,8 +1,12 @@
-var card ={"mine":"Spade A","yours":"Spade B"};
-card["third"] = "Spade 9";
-console.log(card);
-var a=new Date();
-console.log('${a.getDate()}');
-//console.log("${card["mine"]}");
-delete card["third"];
-console.log(card);
+var p ={name:"Tom",age:18};
+console.log(p && p.name);
+
+
+var x =1;
+var n = String(x);
+console.log(parseInt(1101,2));
+console.log(typeof n);
+console.log(eval("function f(){var x=1; return x;}"));
+console.log(eval("x++;"));
+a=3
+    a=4
