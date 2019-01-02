@@ -113,3 +113,104 @@ function card2(x,y){
 var c1 = new card2(3,3);
 console.log(c1.print());
 console.log(card2(3,3));
+
+var p ={name:"Tom",age:18};
+console.log(p && p.name);
+
+
+var x =1;
+var n = String(x);
+console.log(parseInt(1101,2));
+console.log(typeof n);
+console.log(eval("function f(){var x=1; return x;}"));
+console.log(eval("x++;"));
+
+var a=1
+if(a>0){ a++;
+a++}
+else a--;
+console.log(a)
+
+var num =2;
+if( num ==1){
+    console.log("one");
+} else if( num ==2){
+    console.log("two");
+} else {
+    console.log("other");
+}
+a='1.0'
+a=parseFloat(a)
+switch(a){
+    case 1:
+        console.log("one");
+        break;
+    case '2':
+        console.log("two");
+    default:
+        console.log("other");
+}
+console.log(1==1.0);
+
+function cal(x,y,operator){
+    switch(operator){
+        case '+':
+            return x+y;
+        case '-':
+            return x-y;
+        default:
+            return "error"
+    }
+}
+console.log(cal(3,4,'-'));
+
+while (a<5){
+    a+=1;
+    console.log("a is", a);
+}
+
+
+var a = [1,2,3,4,5,6,7,8,9]
+function binarySearch(x,a){
+    var n = a.length;
+    var left = 0, right = n-1;
+    while (left < right){
+        console.log(left,right);
+        var middle = Math.floor((left+right)/2);
+        console.log('middle : ',a[middle]);
+        if( x<= a[middle]){
+            right = middle;
+        }else left = middle+1;
+    }if( x== a[right]) return right;
+        return null;
+    
+}
+console.log("몇번째 : "+binarySearch(5,a));
+function fact(N){
+    var k =1;
+    do{
+        k *= N--;
+    }while(N>0);
+    return k;
+}
+console.log(fact(4));
+var square =(x) =>{return x*x};
+console.log(square(3));
+
+
+
+var n = 10;
+var p = [];
+for (var i=1; i <= n; i++) p[i] = true;
+p[0] =false;
+var max = Math.floor(Math.sqrt(n));
+var x   = 2;
+while(x<=max){
+    for (var i=2*x; i<=n; i+=x) p[i] = false;
+    console.log(x);
+    while (!p[++x]){
+        
+    }
+}
+console.log(!p[0])
+
